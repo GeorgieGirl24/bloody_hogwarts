@@ -1,0 +1,10 @@
+<h2>Student's Show Page</h2>
+
+
+<h3>All of Students's Courses</h3>
+<% @student.courses.each do |student_course| %>
+  <p>Course: <%= student_course.name %></p>
+<% end %>
+Name:  <%= @student.name %>
+Age: <%= @student.age %>
+House: <%= @student.house %>
