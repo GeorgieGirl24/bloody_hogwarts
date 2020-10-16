@@ -1,0 +1,9 @@
+<h2>Student's Index Page</h2>
+
+<% @students.each do |student| %>
+  <div id="#{student.id}-block">
+    <p>Name:  <%= student.name %></p>
+    <p>Age: <%= student.age %></p>
+    <p>House: <%= student.house %></p>
+  </div>
+<% end %>
