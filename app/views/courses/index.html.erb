@@ -1,0 +1,6 @@
+<h2>Course's Index Page</h2>
+
+<h3><%= 'List of Students per Course'%></h3>
+<% @courses.each do |course| %>
+  <p><%= course.name %>: <%= course.students.count%></p>
+<% end %>
